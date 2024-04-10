@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devicewidth,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Alan's Survey Form </h1>
+    <p id="description">
+      Thank you for your time answering my survey!
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id ="name-label">Name </label>
+        <input 
+          required 
+          id="name" 
+          type="text" 
+          placeholder ="Enter your name here"
+          />
+        <label for="email" id ="email-label">Email </label>
+        <input 
+          required 
+          id="email" 
+          type="email" 
+          placeholder="Enter your email here"
+          />
+        <label for="number" id ="number-label">Number </label>
+          <input 
+          id="number" 
+          type="number" 
+          min="1" 
+          max="100" 
+          placeholder="1-100"
+          />
+      </fieldset>
+      <fieldset>
+        <legend>Would you visit this awesome page in the future?</legend>
+        <label for="yes">Yes.</label>
+        <input 
+        id="yes"
+        value="0"
+        type="radio"  
+        name="revisit"
+        class="inline"
+        checked>
+        <label for="no">No, I am boring.</label>
+        <input 
+        id="no"
+        value="1"
+        type="radio"  
+        name="revisit"
+        class="inline"
+        checked
+        />
+
+      </fieldset>
+      <fieldset>
+      <label for="dropdown">Do you like my page? </label>
+        <select id="dropdown" name="likeness">
+          <option value="">(Select one) </option>
+          <option value="1">I love it!</option>
+          <option value="2">It can be better.</option>
+          <option value="3">No, I hate it.</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Which of these colors do you like?</legend>
+        <label>Red<input type="checkbox" value="1"></label>
+        <label>Green<input type="checkbox" value="2"></label>
+        <label>Blue<input type="checkbox" value="3"></label>
+        <label>Cyan<input type="checkbox" value="4"></label>
+        <label>Magenta<input type="checkbox" value="5"></label>
+        <label>Yellow<input type="checkbox" value="6"></label>
+        
+      </fieldset>
+      <fieldset>
+        <label for="suggestions">Do you have any comments or suggestions?</label>
+        <textarea 
+          id="suggestions" 
+          name="suggestions" 
+          rows="3" 
+          cols="30"
+          placeholder="Make more cool websites like this one!">
+        </textarea>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+  </body>
+</html>
